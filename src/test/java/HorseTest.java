@@ -22,7 +22,6 @@ class HorseTest {
         } catch (IllegalArgumentException e) {
             assertEquals("Name cannot be null.", e.getMessage());
         }
-
     }
 
     @ParameterizedTest
@@ -31,6 +30,24 @@ class HorseTest {
         IllegalArgumentException e = assertThrows(IllegalArgumentException.class,
                 () -> new Horse(parameter, 1, 1));
         assertEquals("Name cannot be blank.", e.getMessage());
+    }
+
+    @Test
+    void whenSpeedIsNegativeThrowIllegalArgumentException() {
+        try {
+            new Horse("Пони", -1, 1);
+        } catch (IllegalArgumentException e) {
+            assertEquals("Speed cannot be negative.", e.getMessage());
+        }
+    }
+
+    @Test
+    void whenDistanceIsNegativeThrowIllegalArgumentException() {
+        try {
+            new Horse("Пони", 1, -1);
+        } catch (IllegalArgumentException e) {
+            assertEquals("Distance cannot be negative.", e.getMessage());
+        }
     }
 
     @ParameterizedTest
@@ -58,19 +75,16 @@ class HorseTest {
         Horse horse = new Horse("Лошадка", 1, 823);
         assertEquals(823, horse.getDistance());
     }
+
     @Test
-    void whenNoDistanceGetZero(){
+    void whenNoDistanceGetZero() {
         Horse horse = new Horse("Лошадка", 1);
         assertEquals(0, horse.getDistance());
     }
 
     @Test
-    void move() {
-    }
-
-    @Test
     void whenUseMoveUseGetRandomDoubleToo() {
-        try(MockedStatic<Horse> mockedStatic = mockStatic(Horse.class)){
+        try (MockedStatic<Horse> mockedStatic = mockStatic(Horse.class)) {
             new Horse("Лошадка", 1, 823).move();
             mockedStatic.verify(() -> Horse.getRandomDouble(0.2, 0.9));
         }
