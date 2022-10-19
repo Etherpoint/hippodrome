@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="HippodromeTest" time="0.711" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="HippodromeTest" time="0.739" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="D:\jdk-18.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\danil\AppData\Local\Temp\surefire17842751213254994982\surefirebooter8823609002585963275.jar C:\Users\danil\AppData\Local\Temp\surefire17842751213254994982 2022-10-19T20-00-37_751-jvmRun1 surefire10554740478960751084tmp surefire_016159305356330593397tmp"/>
+    <property name="sun.java.command" value="C:\Users\danil\AppData\Local\Temp\surefire6708623894506531982\surefirebooter13856541785414459035.jar C:\Users\danil\AppData\Local\Temp\surefire6708623894506531982 2022-10-19T20-16-05_269-jvmRun1 surefire5516346681986598752tmp surefire_04517309853918504828tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Education\hippodrome\target\test-classes;D:\Education\hippodrome\target\classes;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\danil\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\danil\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\danil\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\danil\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\danil\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\danil\.m2\repository\org\mockito\mockito-inline\4.6.1\mockito-inline-4.6.1.jar;C:\Users\danil\.m2\repository\org\mockito\mockito-core\4.6.1\mockito-core-4.6.1.jar;C:\Users\danil\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\danil\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.10\byte-buddy-agent-1.12.10.jar;C:\Users\danil\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\danil\AppData\Local\Temp\surefire17842751213254994982\surefirebooter8823609002585963275.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\danil\AppData\Local\Temp\surefire6708623894506531982\surefirebooter13856541785414459035.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.1+10-24"/>
@@ -57,8 +57,8 @@
     <property name="java.class.version" value="62.0"/>
   </properties>
   <testcase name="whenEmptyHorsesThrowException" classname="HippodromeTest" time="0.013"/>
-  <testcase name="move" classname="HippodromeTest" time="0.683"/>
-  <testcase name="whenEmptyHorsesGetMessage" classname="HippodromeTest" time="0.003"/>
+  <testcase name="move" classname="HippodromeTest" time="0.712"/>
+  <testcase name="whenEmptyHorsesGetMessage" classname="HippodromeTest" time="0.002"/>
   <testcase name="getHorses" classname="HippodromeTest" time="0.001"/>
   <testcase name="getWinner" classname="HippodromeTest" time="0.002"/>
 </testsuite>
